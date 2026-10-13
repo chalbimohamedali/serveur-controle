@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: serveur-controle
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python serveur_central.py
